@@ -1,11 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>t-ticket</title>
-</head>
-<body>
+    <!-- daisy ui from here -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between pl-20 pr-20 pt-5">
+        <div>
+          <h2 class="text-[#030712] text-2xl font-extrabold">p-ticket</h2>
+        </div>
+        <div>
+          <ul class="flex justify-evenly gap-10">
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">destination</a></li>
+            <li><a href="">search</a></li>
+          </ul>
+        </div>
+        <div
+          class="flex gap-1 items-center justify-center bg-green-200 p-2 rounded-lg"
+        >
+          <div>Bus</div>
+          <div><img src="images/bus-icon.png" alt="" /></div>
+        </div>
+      </nav>
+
+      <!-- banner related style from here -->
+
+      <div
+        class="relative mr-20 ml-20 mt-10 rounded-2xl bg-cover bg-center h-screen flex items-center justify-center"
+        style="background-image: url(images/banner.png)"
+      >
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4 m-auto w-[40%] text-[#FFFFFF]">
+            End-To-End Travel With
+            <span class="text-[#1DD100]">P Phoribohon</span>
+          </h2>
+          <p class="mb-6 m-auto w-[60%] text-center text-[#FFFFFF]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+            alias consectetur labore expedita atque incidunt hic ea illum
+            architecto neque!
+          </p>
+          <button class="bg-[#1DD100] text-black py-2 px-4 rounded">
+            Buy Ticket
+          </button>
+        </div>
+        <!-- bg-img er niche oygo add korci akhane theke -->
+        <div class="flex gap-2 absolute -bottom-10">
+          <div class="flex bg-[#FFFFFF] rounded-lg p-4">
+            <div><img src="images/people.png" alt="" /></div>
+            <div>
+              <h2>500k+</h2>
+              <p>resester user</p>
+            </div>
+          </div>
+          <div class="flex bg-[#FFFFFF] rounded-lg p-4">
+            <div>
+              <img src="images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h2>1.7lacks</h2>
+              <p>ticket sold</p>
+            </div>
+          </div>
+          <div class="flex bg-[#FFFFFF] rounded-lg p-4">
+            <div>
+              <img src="images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h2>80k+</h2>
+              <p>rental partnar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- best offer section start from here -->
+      <section class="p-20">
+        <div>
+          <h2 class="text-center">Best offers for you</h2>
+        </div>
+        <div class="flex justify-center gap-4 mt-10">
+          <div
+            class="bg-[#FFBF0F] flex justify-between p-5 relative h-52 rounded-xl w-1/2"
+          >
+            <div class="pt-5 pl-3">
+              <h2>15% off</h2>
+              <p>on your next perches</p>
+              <p>use by janury 2024</p>
+            </div>
+            <div class="pt-5 pl-3">
+              <h2>new 15</h2>
+              <p>coupon code</p>
+            </div>
+            <img
+              class="absolute bottom-0 right-44"
+              src="images/cupon-devider.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="relative bg-[#F78C9C] flex justify-between p-5 relative h-52 rounded-lg w-1/2"
+          >
+            <div class="pt-5 pl-3">
+              <h2>20% off</h2>
+              <p>on your next perches</p>
+              <p>use by janury 2024</p>
+            </div>
+            <div class="pt-5 pl-3">
+              <h2>couple 20</h2>
+              <p>coupon code</p>
+            </div>
+            <img
+              class="absolute bottom-0 right-44"
+              src="images/cupon-devider.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- function er kaj korete hbe ay button er -->
+        <div class="flex justify-center mt-5">
+          <button class="btn btn-outline btn-success">see all offers</button>
+        </div>
+      </section>
+      <!-- vagel system start from here -->
+      <section class="">
+        <div class="">
+          <div class="text-center">
+            <h2 class="text-[#030712] font-extrabold releway-font text-4xl">
+              Moon Poribohon
+            </h2>
+            <p class="m-auto w-[50%] text-center text-sm mt-2f">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              laborum veniam aliquid soluta eligendi tempora deleniti
+              repudiandae necessitatibus dolor dolore!
+            </p>
+          </div>
+          <!-- greenline poribohon part start from here -->
+          <div class="pl-20 pr-20 bg-[#FFFFFF] relative mt-10">
+            <!-- upor er ta akdom main div -->
+            <!-- nicher div ta main div hisabe kaj kortaca ima o atar mood add korbo -->
+            <div class="flex justify-between">
+              <div class="w-[80%]">
+                <div class="flex justify-between mt-10">
+                  <div class="flex gap-2">
+                    <div>
+                      <img src="images/bus-logo.png" alt="" />
+                    </div>
+                    <div>
+                      <h2
+                        class="text-[#030712] font-extrabold text-2xl uppercase releway-font"
+                      >
+                        moon poribohon
+                      </h2>
+                      <p class="text-[#03071299] font-semibold">
+                        conach 123 ac web
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex gap-2 bg-green-200 p-2 rounded-lg items-center"
+                  >
+                    <div><img src="images/seat-green-filled.png" alt="" /></div>
+                    <div>
+                      <h2 class="text-[#1DD100]">40 seat left</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-[#F7F8F8] p-10 mt-10 rounded-xl">
+                  <div class="flex justify-between mt-5">
+                    <p>Route</p>
+                    <p class="text-[#030712] font-semibold">Dhaka-Bogura</p>
+                  </div>
+                  <hr />
+                  <div class="flex justify-between mt-5">
+                    <p>Depurite Time</p>
+                    <p class="text-[#030712] font-semibold">9 am</p>
+                  </div>
+                  <hr />
+                  <div class="flex justify-between mt-5">
+                    <div>
+                      <button class="bg-[#0307120D] rounded-lg p-2">
+                        Bording Point-Dhaka
+                      </button>
+                    </div>
+                    <div>
+                      <button class="bg-[#0307120D] rounded-lg p-2">
+                        Droping point-Bogura
+                      </button>
+                    </div>
+                    <div>
+                      <button class="bg-[#0307120D] rounded-lg p-2">
+                        Est Time 9
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- left side er ta niche nicher div tar moddho -->
+              </div>
+              <div class="mt-28">
+                <div>
+                  <div>
+                    <img src="images/fare.png" alt="" />
+                    <h2 class="text-[#030712] text-2xl font-extrabold">
+                      <span class="text-[#030712] text-2xl font-extrabold"
+                        >550</span
+                      >Tk
+                    </h2>
+                    <p>per seat</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="absolute top-0 right-40"
+              src="images/info-devider.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- ticket kater part shuru akhane theke  -->
+        <div class="ml-20 mr-20 mt-36 bg-white flex justify-between">
+          <div class="mt-5 w-[80%]">
+            <h2>select your seat</h2>
+            <hr />
+            <!-- ayta sit er div seat ar text tak flex korbi  -->
+            <div class="flex justify-between mt-5">
+              <div class="flex gap-2">
+                <img src="images/seat-gray.png" alt="" />
+                <h2>Avivable</h2>
+              </div>
+              <div class="flex gap-2">
+                <img src="images/seat-green-filled.png" alt="" />
+                <h2>selected</h2>
+              </div>
+            </div>
+            <!-- dirver er logo div nicher ta -->
+            <div>
+              <div class="grid grid-cols-12">
+                <div class="col-span-2 grid grid-rows-10 gap-5 pl-2 mt-4">
+                  <span>A</span>
+                  <span>B</span>
+                  <span>C</span>
+                  <span>D</span>
+                  <span>E</span>
+                  <span>F</span>
+                  <span>G</span>
+                  <span>H</span>
+                  <span>I</span>
+                  <span>J</span>
+                </div>
+                <div class="col-span-10 grid grid-cols-2 gap-5">
+                  <div class="grid grid-rows-10 grid-cols-2 gap-2">
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      A1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      A2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      B1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      B2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      C1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      C2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      D1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      D2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      E1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      E2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      F1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      F2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      G1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      G2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      H1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      H2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      I1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      I2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      J1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      J2
+                    </button>
+                  </div>
+                  <div class="grid grid-rows-10 grid-cols-2 gap-5">
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      A3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      A4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      B3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      B4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      C3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      C4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      D3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      D4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      E3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      E4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      F3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      F4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      G3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      G4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      H3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      H4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      I3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      I4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      J3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
+                      class="btn"
+                    >
+                      J4
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ticket er right pase jinis thakbe nicher ay div tai -->
+          <div class="bg-white mt-36">
+            <!-- nicher div ta shudu selected ar jonno use korci -->
+            <div>
+              <h2>Selected Your seat</h2>
+            </div>
+            <hr />
+            <!-- ayta akta box moto jeita oytar kaj korbe ai div -->
+            <div class="bg-[#F7F8F8] p-4">
+              <div class="flex justify-between">
+                <h2>Seat</h2>
+                <h2>Class</h2>
+                <h2>Price</h2>
+              </div>
+              <hr />
+              <div class="later-thik"></div>
+              <hr />
+              <!-- total price div this is  -->
+              <div class="flex justify-between">
+                <h2>Total Price</h2>
+                <h2>BDT <span>0</span></h2>
+              </div>
+              <!-- input filed div nicher ta  -->
+              <div class="flex justify-center">
+                <input type="text" placeholder="have any coupon?" />
+                <button class="bg-[#1DD100] p-1 text-white rounded-lg">
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between">
+                <h2>Grand Total</h2>
+                <h2>BDT <span>0</span></h2>
+              </div>
+            </div>
+            <div class="mt-5">
+                <h2 class="mt-2">passenger name</h2>
+                <input class="border rounded-lg mt-2 p-2" type="text" placeholder="Enter your name" >
+                <h2 class="mt-2">Phone number</h2>
+                <input class="border rounded-lg p-2" type="number" placaholde="Enter your number">
+                <h2 class="mt-2">Email id</h2>
+                <input class="border rounded-lg p-2" type="text" placeholder="Enter your email id">
+                <br>
+                <button class="bg-[#1DD100] p-2 w-[100%] rounded-lg mt-3 text-white">Next</button>
+            </div>
+            <div class="flex justify-between mt-3">
+                <h2 class=" text-center text-sm">Terms and Conditions</h2>
+                <hr>
+                <h2 class=" text-center text-sm">Cancellation Policy</h2>
+                <hr>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black mt-10 h-80 p-20">
+        <!-- ayta main div footer er ay div k flex mare kaj korte hbe -->
+        <div class="flex justify-between">
+            <div>
+                <h2 class="text-[rgba(255,255,255,0.8)] text-2xl font-bold">P-Ticket</h2>
+                <p class="text-[rgba(255,255,255,0.7)]">P-Ticket is a digital platform to make your daily commuting better.</p>
+                
+                <p class="text-[rgba(255,255,255,0.8)]">@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <!-- right side er div nicher ta  -->
+            <div>
+                <h2 class="text-[rgba(255,255,255,0.8)]">Download our app</h2>
+                <div class="flex gap-1 border rounded-lg w-[25%]">
+                    <img src="images/playstore.png" alt="">
+                    <h2 class="text-[rgba(255,255,255,0.8)]">Google play</h2>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-[rgba(255,255,255,0.8)]">Terms & condition</p>
+                    <p class="text-[rgba(255,255,255,0.8)]">Return & refund policy</p>
+                    <p class="text-[rgba(255,255,255,0.8)]">Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/t-ticket.js"></script>
-</body>
+  </body>
 </html>
