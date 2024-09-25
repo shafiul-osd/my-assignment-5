@@ -55,7 +55,10 @@
             alias consectetur labore expedita atque incidunt hic ea illum
             architecto neque!
           </p>
-          <button class="bg-[#1DD100] text-black py-2 px-4 rounded">
+          <button
+            onclick="scroolSection()"
+            class="bg-[#1DD100] text-black py-2 px-4 rounded"
+          >
             Buy Ticket
           </button>
         </div>
@@ -139,8 +142,8 @@
         </div>
       </section>
       <!-- vagel system start from here -->
-      <section class="">
-        <div class="">
+      <section>
+        <div>
           <div class="text-center">
             <h2 class="text-[#030712] font-extrabold releway-font text-4xl">
               Moon Poribohon
@@ -178,7 +181,9 @@
                   >
                     <div><img src="images/seat-green-filled.png" alt="" /></div>
                     <div>
-                      <h2 class="text-[#1DD100]">40 seat left</h2>
+                      <h2 class="text-[#1DD100]">
+                        <span id="seat-minus">40</span> seat left
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -237,7 +242,10 @@
         </div>
 
         <!-- ticket kater part shuru akhane theke  -->
-        <div class="ml-20 mr-20 mt-36 bg-white flex justify-between">
+        <div
+          id="vegal-section"
+          class="ml-20 mr-20 mt-36 bg-white flex justify-between"
+        >
           <div class="mt-5 w-[80%]">
             <h2>select your seat</h2>
             <hr />
@@ -269,246 +277,126 @@
                 </div>
                 <div class="col-span-10 grid grid-cols-2 gap-5">
                   <div class="grid grid-rows-10 grid-cols-2 gap-2">
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       A1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       A2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       B1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       B2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       C1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       C2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       D1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       D2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       E1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       E2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       F1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       F2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       G1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       G2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       H1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       H2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       I1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       I2
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       J1
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       J2
                     </button>
                   </div>
                   <div class="grid grid-rows-10 grid-cols-2 gap-5">
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       A3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       A4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       B3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       B4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       C3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       C4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       D3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       D4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       E3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       E4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       F3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       F4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       G3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       G4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       H3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       H4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       I3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       I4
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       J3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] rounded-lg p-4 w-[50%]"
-                      class="btn"
-                    >
+                    <button class="bg-[#F7F8F8] rounded-lg p-4 w-[50%] btn">
                       J4
                     </button>
                   </div>
@@ -526,73 +414,141 @@
             <!-- ayta akta box moto jeita oytar kaj korbe ai div -->
             <div class="bg-[#F7F8F8] p-4">
               <div class="flex justify-between">
-                <h2>Seat</h2>
+                <h2>Seat <span id="seat-count">0</span></h2>
                 <h2>Class</h2>
                 <h2>Price</h2>
               </div>
               <hr />
-              <div class="later-thik"></div>
+              <div id="seat-det-container"></div>
               <hr />
               <!-- total price div this is  -->
               <div class="flex justify-between">
                 <h2>Total Price</h2>
-                <h2>BDT <span>0</span></h2>
+                <h2>BDT <span id="ticket-price">0</span></h2>
               </div>
               <!-- input filed div nicher ta  -->
-              <div class="flex justify-center">
-                <input type="text" placeholder="have any coupon?" />
-                <button class="bg-[#1DD100] p-1 text-white rounded-lg">
+              <div id="coupon-container" class="flex justify-center">
+                <input
+                  id="coupon-code"
+                  type="text"
+                  placeholder="have any coupon?"
+                />
+                <button
+                  id="btn-apply"
+                  class="bg-[#1DD100] p-1 text-white rounded-lg disabled:bg-gray-400"
+                  disabled
+                >
                   Apply
                 </button>
               </div>
               <div class="flex justify-between">
                 <h2>Grand Total</h2>
-                <h2>BDT <span>0</span></h2>
+                <h2>BDT <span id="grand-total">0</span></h2>
               </div>
             </div>
-            <div class="mt-5">
-                <h2 class="mt-2">passenger name</h2>
-                <input class="border rounded-lg mt-2 p-2" type="text" placeholder="Enter your name" >
-                <h2 class="mt-2">Phone number</h2>
-                <input class="border rounded-lg p-2" type="number" placaholde="Enter your number">
-                <h2 class="mt-2">Email id</h2>
-                <input class="border rounded-lg p-2" type="text" placeholder="Enter your email id">
-                <br>
-                <button class="bg-[#1DD100] p-2 w-[100%] rounded-lg mt-3 text-white">Next</button>
-            </div>
+            <form id="form-container" class="mt-5">
+              <h2 class="mt-2">passenger name</h2>
+              <input
+                id="passenger-name"
+                name="name"
+                class="border rounded-lg mt-2 p-2"
+                type="text"
+                placeholder="Enter your name"
+              />
+              <h2 class="mt-2">Phone number</h2>
+              <input
+                id="passenger-number"
+                name="number"
+                class="border rounded-lg p-2"
+                type="number"
+                placaholde="Enter your number"
+              />
+              <h2 class="mt-2">Email id</h2>
+              <input
+                id="passenger-email"
+                name="email"
+                class="border rounded-lg p-2"
+                type="text"
+                placeholder="Enter your email id"
+              />
+              <br />
+              <input
+                id="next-button"
+                name="button"
+                type="submit"
+                value="next"
+                class="bg-[#1DD100] p-2 w-[100%] rounded-lg mt-3 text-white disabled:bg-gray-400"
+                disabled
+              />
+            </form>
+            <!-- modal input there  -->
+            <!-- You can open the modal using ID.showModal() method -->
+            
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl">
+                <h3 class="text-lg font-bold">welcome</h3>
+                <p class="py-4">Congrution you have purchace the ticket </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <!-- 2nd modal start from here -->
+            <dialog id="my_modal_5" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl">
+                <h3 class="text-lg font-bold">sorry</h3>
+                <p class="py-4">first you need to purchase the ticket</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <!-- modal finished from there -->
             <div class="flex justify-between mt-3">
-                <h2 class=" text-center text-sm">Terms and Conditions</h2>
-                <hr>
-                <h2 class=" text-center text-sm">Cancellation Policy</h2>
-                <hr>
+              <h2 class="text-center text-sm">Terms and Conditions</h2>
+              <hr />
+              <h2 class="text-center text-sm">Cancellation Policy</h2>
+              <hr />
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="bg-black mt-10 h-80 p-20">
-        <!-- ayta main div footer er ay div k flex mare kaj korte hbe -->
-        <div class="flex justify-between">
-            <div>
-                <h2 class="text-[rgba(255,255,255,0.8)] text-2xl font-bold">P-Ticket</h2>
-                <p class="text-[rgba(255,255,255,0.7)]">P-Ticket is a digital platform to make your daily commuting better.</p>
-                
-                <p class="text-[rgba(255,255,255,0.8)]">@all rights reserved, P-Ticket services limited.2024</p>
-            </div>
-            <!-- right side er div nicher ta  -->
-            <div>
-                <h2 class="text-[rgba(255,255,255,0.8)]">Download our app</h2>
-                <div class="flex gap-1 border rounded-lg w-[25%]">
-                    <img src="images/playstore.png" alt="">
-                    <h2 class="text-[rgba(255,255,255,0.8)]">Google play</h2>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-[rgba(255,255,255,0.8)]">Terms & condition</p>
-                    <p class="text-[rgba(255,255,255,0.8)]">Return & refund policy</p>
-                    <p class="text-[rgba(255,255,255,0.8)]">Privacy policy</p>
-                </div>
-            </div>
+      <!-- ayta main div footer er ay div k flex mare kaj korte hbe -->
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-[rgba(255,255,255,0.8)] text-2xl font-bold">
+            P-Ticket
+          </h2>
+          <p class="text-[rgba(255,255,255,0.7)]">
+            P-Ticket is a digital platform to make your daily commuting better.
+          </p>
+
+          <p class="text-[rgba(255,255,255,0.8)]">
+            @all rights reserved, P-Ticket services limited.2024
+          </p>
         </div>
+        <!-- right side er div nicher ta  -->
+        <div>
+          <h2 class="text-[rgba(255,255,255,0.8)]">Download our app</h2>
+          <div class="flex gap-1 border rounded-lg w-[25%]">
+            <img src="images/playstore.png" alt="" />
+            <h2 class="text-[rgba(255,255,255,0.8)]">Google play</h2>
+          </div>
+          <div class="flex justify-between">
+            <p class="text-[rgba(255,255,255,0.8)]">Terms & condition</p>
+            <p class="text-[rgba(255,255,255,0.8)]">Return & refund policy</p>
+            <p class="text-[rgba(255,255,255,0.8)]">Privacy policy</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/t-ticket.js"></script>
   </body>
